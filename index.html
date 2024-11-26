@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUITEGAMING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SUITEGAMING AREQUIPA</h1>
+        <nav>
+            <span class="filter active" data-category="all">Todos</span>
+            <span class="filter" data-category="promociones">Promociones</span>
+            <span class="filter" data-category="torneos">Torneos</span>
+            <span class="filter" data-category="ubicanos">Ubícanos</span>
+            <span class="filter" data-category="otros">Otros</span>
+        </nav>
+    </header>
+
+    <section class="reels" id="inicio">
+        <div class="reel__container">
+            <div class="reel__item" data-category="ubicanos">
+                <img src="../docs/images/wasap.jpg" alt="Reel 1">
+                <div class="reel__caption">Únete a nuestro grupo de WhatsApp y entérate de lo más nuevo en Suitegaming</div>
+                <button class="reel__button" onclick="window.open('https://chat.whatsapp.com/FYjt2UZBY3JEk1WuKdAx2v')">Unirse Ahora</button>
+            </div>
+            <div class="reel__item" data-category="promociones">
+                <img src="../docs/images/recarga.png" alt="Reel 2">
+                <div class="reel__caption">PROMOCION: Todas tus recargas de más de 20 soles tienen un 20% adicional.</div>
+            </div>
+            <div class="reel__item" data-category="otros">
+                <iframe src="https://www.youtube.com/embed/IGfGXp8yxi8" allowfullscreen></iframe>
+                <div class="reel__caption">Sube tu medalla gracias al bajo packet loss en Suitegaming</div>
+            </div>
+            <div class="reel__item" data-category="torneos">
+                <iframe src="https://www.youtube.com/embed/bq4USwvqqFc?start=14" allowfullscreen></iframe>
+                <div class="reel__caption">Final del Torneo de Inmortales en Suitegaming</div>
+            </div>
+            <div class="reel__item" data-category="torneos">
+                <img src="../docs/images/ganad.png" alt="Reel 2">
+                <div class="reel__caption">Ganadores de los diferentes torneos realizados en SUITEGAMING, Categorías Yatoro e Inmortals.</div>
+            </div>
+            <div class="reel__item" data-category="ubicanos">
+                <img src="../docs/images/macbook.png" alt="Reel 2">
+                <div class="reel__caption">Estamos ubicados en la Av. Tintaya 215, frente a Shalom y Panadería Tintaya.</div>
+                <button class="reel__button" onclick="window.open('https://maps.app.goo.gl/JGHFVWJ1i56WwFPB9')">Ir a Suitegaming</button>
+            </div>
+            <div class="reel__item" data-category="ubicanos">
+                <img src="../docs/images/faceb.jpg" alt="Reel 2">
+                <div class="reel__caption">Visita nuestro Facebook y entérate de lo más nuevo en Suitegaming</div>
+                <button class="reel__button" onclick="window.open('https://www.facebook.com/suitegaming')">Visitar Facebook</button>
+            </div>
+        </div>
+        <button class="arrow left" id="prev">←</button>
+        <button class="arrow right" id="next">→</button>
+    </section>
+
+    <footer>
+        <h3>SUITEGAMING</h3>
+        <p>Un ambiente divertido para disfrutar de tus juegos favoritos con buenos equipos.</p>
+        <p>Derechos reservados &copy; 2024 SUITEGAMING</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
