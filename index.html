@@ -3,57 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUITEGAMING</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SUITEGAMINGAQP - Tu Lan Center en Arequipa</title>
+    <meta name="description" content="Las mejores promociones, torneos de CSGO, Wolfteam, Fortnite y comunidad gamer en SUITEGAMINGAQP, tu lan center en Arequipa. ¡Visítanos!">
+    <link rel="stylesheet" href="style.css">
+    <!-- Puedes añadir un icono para la pestaña del navegador (favicon) aquí -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
+
     <header>
-        <h1>SUITEGAMING AREQUIPA</h1>
-        <nav>
-            <span class="filter active" data-category="all">Todos</span>
-            <span class="filter" data-category="promociones">Promociones</span>
-            <span class="filter" data-category="torneos">Torneos</span>
-            <span class="filter" data-category="ubicanos">Ubícanos</span>
-            <span class="filter" data-category="otros">Otros</span>
-        </nav>
+        <div class="container">
+            <a href="#inicio" class="logo">SUITEGAMINGAQP</a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#torneos">Torneos</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-button" aria-label="Toggle Menu">☰</button>
+        </div>
     </header>
 
-    <section class="reels" id="inicio">
-        <div class="reel__container">
-            <div class="reel__item" data-category="ubicanos">
-                <img src="../images/wasap.jpg" alt="Reel 1">
-                <div class="reel__caption">Únete a nuestro grupo de WhatsApp y entérate de lo más nuevo en Suitegaming</div>
-                <button class="reel__button" onclick="window.open('https://chat.whatsapp.com/GHZhwPnb32CEsRmXBU4RsP')">Unirse Ahora</button>
+    <main>
+        <!-- Sección Inicio (Hero) -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Bienvenido a SUITEGAMINGAQP</h1>
+                <p>Tu espacio para jugar, competir y conectar en Arequipa.</p>
+                <a href="#promociones" class="btn btn-primary">Ver Promociones</a>
             </div>
-            <div class="reel__item" data-category="ubicanos">
-                <img src="../images/macbook.png" alt="Reel 2">
-                <div class="reel__caption">Estamos ubicados a media Cuadra de la UCSM y facultad de postgrado UCSM, 3ER PISO LIBRERIA HUEQUITO</div>
-                <button class="reel__button" onclick="window.open('https://maps.app.goo.gl/yErB4APvnQJXNd3a9')">Ir a Suitegaming</button>
+        </section>
+
+        <!-- Sección Promociones -->
+        <section id="promociones" class="section-padding">
+            <div class="container">
+                <h2>Promociones Vigentes</h2>
+                <div class="grid-container">
+                    <!-- Promoción 1 -->
+                    <article class="card">
+                        <img src="images/promo-fds.jpg" alt="Promo Fulldays Fines de Semana" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>Fulldays Fines de Semana</h3>
+                        <p>¡Disfruta de todo el día de juego los sábados y domingos por un precio increíble!</p>
+                        <p class="card-price">S/ 9.90</p>
+                    </article>
+
+                    <!-- Promoción 2 -->
+                    <article class="card">
+                        <img src="images/promo-tardes.jpg" alt="Promo Tardes en SuiteGaming" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>Tardes en SuiteGaming</h3>
+                        <p>Aprovecha 5 horas continuas de juego por solo 10 soles. ¡Válido desde las 3:00 PM!</p>
+                        <p class="card-price">S/ 10.00</p>
+                    </article>
+
+                    <!-- Promoción 3 -->
+                    <article class="card">
+                         <img src="images/promo-recarga.jpg" alt="Promo Super Recargas" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>¡Super Recargas!</h3>
+                        <p>¡Maximiza tu saldo! Recarga S/ 10 y recibe S/ 12. Recarga S/ 20 y juega con S/ 26.</p>
+                         <p class="card-condition">¡Más tiempo para jugar!</p>
+                    </article>
+                </div>
             </div>
-            <div class="reel__item" data-category="ubicanos">
-                <img src="../images/faceb.jpg" alt="Reel 2">
-                <div class="reel__caption">Visita nuestro Facebook y entérate de lo más nuevo en Suitegaming</div>
-                <button class="reel__button" onclick="window.open('https://www.facebook.com/suitegamingaqp')">Visitar Facebook</button>
+        </section>
+
+        <!-- Sección Torneos -->
+        <section id="torneos" class="section-padding dark-section">
+            <div class="container">
+                <h2>Torneos de Abril</h2>
+                 <div class="grid-container">
+                    <!-- Torneo CSGO -->
+                    <article class="card">
+                         <img src="images/torneo-csgo.jpg" alt="Torneo CSGO" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>Torneo Regular CS:GO</h3>
+                        <p>Competencia clásica de Counter-Strike. Demuestra tu puntería y estrategia.</p>
+                        <p><strong>Fecha:</strong> Sábado 13 de Abril</p>
+                        <a href="https://drive.google.com/drive/folders/10yyYn2QqofEa4stRbUGJxMO6LRDWy1ZR?hl=es-419" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Detalles / Inscribirse</a>
+                    </article>
+
+                    <!-- Torneo Wolfteam Clasificatoria 1 -->
+                    <article class="card">
+                         <img src="images/torneo-wolfteam.jpg" alt="Torneo Wolfteam Clasificatoria 1" class="card-img"> <!-- Reemplaza con tu imagen -->
+                         <h3>Wolfteam: Clasificatoria #1</h3>
+                         <p>¡Primera llamada para los lobos! Compite y asegura tu cupo para la gran final.</p>
+                         <p><strong>Fecha:</strong> Sábado 13 de Abril</p>
+                         <a href="https://drive.google.com/drive/folders/10yyYn2QqofEa4stRbUGJxMO6LRDWy1ZR?hl=es-419" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Detalles / Inscribirse</a>
+                     </article>
+
+                     <!-- Torneo Fortnite -->
+                    <article class="card">
+                         <img src="images/torneo-fortnite.jpg" alt="Torneo Fortnite" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>Torneo Regular Fortnite</h3>
+                        <p>¡A construir y disparar! Compite por la Victoria Magistral en nuestro torneo.</p>
+                        <p><strong>Fecha:</strong> Sábado 20 de Abril</p>
+                        <a href="https://drive.google.com/drive/folders/10yyYn2QqofEa4stRbUGJxMO6LRDWy1ZR?hl=es-419" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Detalles / Inscribirse</a>
+                    </article>
+
+                     <!-- Torneo Wolfteam Clasificatoria 2 -->
+                     <article class="card">
+                        <img src="images/torneo-wolfteam.jpg" alt="Torneo Wolfteam Clasificatoria 2" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>Wolfteam: Clasificatoria #2</h3>
+                        <p>Segunda oportunidad para demostrar tu valía y clasificar a la final presencial.</p>
+                        <p><strong>Fecha:</strong> Sábado 20 de Abril</p>
+                        <a href="https://drive.google.com/drive/folders/10yyYn2QqofEa4stRbUGJxMO6LRDWy1ZR?hl=es-419" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Detalles / Inscribirse</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/torneo-left.jpg" alt="Torneo Left 4 Dead Universitario" class="card-img"> <!-- Reemplaza con tu imagen -->
+                       <h3>Torneo Universitario Left4Dead</h3>
+                       <p>Unete con tu team de 4, y demuestra que tu universidad es la mejor.</p>
+                       <p><strong>Fecha:</strong> Sábado 26 y Domingo 27 de Abril</p>
+                       <a href="https://drive.google.com/drive/folders/10yyYn2QqofEa4stRbUGJxMO6LRDWy1ZR?hl=es-419" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Detalles / Inscribirse</a>
+                   </article>
+
+                    <!-- Torneo Wolfteam FINAL -->
+                    <article class="card">
+                        <img src="images/torneo-wolfteam.jpg" alt="Torneo Wolfteam Final Presencial" class="card-img"> <!-- Reemplaza con tu imagen -->
+                        <h3>¡GRAN FINAL WOLFTEAM!</h3>
+                        <p>Los mejores equipos se enfrentan en una batalla épica presencial. ¡No te la pierdas!</p>
+                        <p><strong>Fecha:</strong> Sábado 27 de Abril</p>
+                        <a href="https://drive.google.com/drive/folders/10yyYn2QqofEa4stRbUGJxMO6LRDWy1ZR?hl=es-419" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Detalles del Evento</a>
+                    </article>
+                 </div>
             </div>
-            <div class="reel__item" data-category="torneos">
-                <iframe src="https://www.youtube.com/embed/bq4USwvqqFc?start=14" allowfullscreen></iframe>
-                <div class="reel__caption">Final del Torneo de Inmortales en Suitegaming Esp</div>
+        </section>
+
+        <!-- Sección Comunidad (WhatsApp) -->
+        <section id="comunidad" class="section-padding">
+            <div class="container text-center">
+                <h2>Únete a Nuestra Comunidad</h2>
+                <p>Conéctate con otros gamers, entérate de novedades y arma tus equipos en nuestro grupo oficial.</p>
+                <div class="whatsapp-links">
+                    <a href="https://chat.whatsapp.com/HHiM7RH3RpA2ImmxeECpeX" target="_blank" class="btn btn-whatsapp">
+                        <img src="images/whatsapp-icon.png" alt="WhatsApp" width="20" height="20"> Grupo Oficial SUITEGAMINGAQP
+                    </a>
+                </div>
             </div>
-            <div class="reel__item" data-category="torneos">
-                <img src="../images/ganad.png" alt="Reel 2">
-                <div class="reel__caption">Ganadores de los diferentes torneos realizados en SUITEGAMING ESP, Categorías Yatoro e Inmortals.</div>
+        </section>
+
+        <!-- Sección Ubicación -->
+        <section id="ubicacion" class="section-padding dark-section">
+            <div class="container">
+                <h2>Encuéntranos</h2>
+                <div class="location-content">
+                    <div class="map-container">
+                        <!-- Código de inserción de Google Maps -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.386112738828!2d-71.55223602393741!3d-16.405205338293815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b06905d3785%3A0x71c72c8f2493d3f7!2sSUITEGAMING%20AQP!5e0!3m2!1ses!2spe!4v1744387355263!5m2!1ses!2spe"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Ubicación de SUITEGAMINGAQP"></iframe>
+                    </div>
+                    <div class="address-info">
+                        <h3>Dirección</h3>
+                        <p>Calle José María Arguedas, 3° piso librería el "huequito", a media cuadra del Edificio Postgrado UCSM, Arequipa, Perú</p>
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Domingo: 8:00 AM - 10:00 PM</p>
+                        <!-- <h3>Contacto</h3> -->
+                        <!-- <p>Teléfono: +51 987 654 321</p> -->
+                        <!-- <p>Email: contacto@suitegamingaqp.com</p> -->
+                    </div>
+                </div>
             </div>
-            
-        </div>
-        <button class="arrow left" id="prev">←</button>
-        <button class="arrow right" id="next">→</button>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <h3>SUITEGAMING</h3>
-        <p>Un ambiente divertido para disfrutar de tus juegos favoritos con buenos equipos.</p>
-        <p>Derechos reservados &copy; 2024 SUITEGAMING</p>
+        <div class="container">
+            <p>© 2025 SUITEGAMINGAQP. Todos los derechos reservados.</p> <!-- Año actualizado -->
+            <!-- Puedes añadir enlaces a redes sociales aquí -->
+            <!-- <div class="social-links">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </div> -->
+        </div>
     </footer>
+
+    <!-- El código del modal ha sido eliminado -->
 
     <script src="script.js"></script>
 </body>
